@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/App/token/home-page/home_style.css">
+
+    <link rel="icon" type="image/x-icon" href="/favicon_e.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    
+    <title>Emmanual | Home</title>
+    <script>
+        // Function to get URL parameters
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Function to check token validity
+
+        // remove the comments from below code to activate session checks 
+        // function checkToken() {
+        //     const token = getQueryParam('token');
+        //     const expires = getQueryParam('expires');
+
+        //     if (!token || !expires) {
+        //         alert('Invalid session.');
+        //         window.location.href = 'http://127.0.0.1:5500/App/token/home-page/home-page.html';
+        //         return;
+        //     }
+
+        //     const currentTime = Date.now();
+        //     if (currentTime <= parseInt(expires)) {
+        //         // Token is valid and within the 1-hour limit
+        //         document.getElementById('content').style.display = 'block';
+        //     } else {
+        //         // Token is invalid or expired
+        //         alert('Session expired.');
+        //         window.location.href = 'http://127.0.0.1:5500/App/token/home-page/home-page.html';
+        //     }
+        // }
+
+        window.onload = function() {
+            checkToken();
+        };
+    </script>
+</head>
+<!-- change block to "none" after pages are done -->
+<body id="content" style="display:block;">
+   <!-- Creating navbar -->
+   <ul>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#home" id="icon_text">
+        <div id="icon_container">
+            <span id="icon">emmanual.dev</span>
+        </div>
+    </a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#cert">Cert.</a></li>
+    <li style="float:right"><a href="#toogle">
+        <i class="fa-solid fa-toggle-off"></i></a></li>
+  </ul>
+
+
+  <div id="name">
+   <span id="name_1">EMMANUAL JANUARIE</span><br>
+   <span id="name_2">SOFTWARE DEVELOPER</span>
+   <span id="extra_text">Why do programmers prefer dark mode?<br> Because light attracts bugs!</span>
+   <span id="image">
+    <img src="/src/angry-2498.gif" alt="Angry dog picture by u_mey4kjj5ww on pixbay">
+   </span>
+  </div>
+</body>
+</html>

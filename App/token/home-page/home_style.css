@@ -1,0 +1,112 @@
+body { 
+  margin: 0; 
+  padding: 0; 
+  height: 100%; 
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 auto; /* Center the ul */
+  padding: 0;
+  display: flex; /* Use Flexbox for layout */
+  justify-content: center; /* Center the items */
+  background-color: #333;
+}
+
+li {
+  margin: 0 10px; /* Add space between list items */
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+
+
+li a#icon_text:hover {
+  text-decoration: none;
+}
+
+#icon_container {
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  height: 30px;
+  margin: 2px auto; /* Center the icon container with margin */
+}
+
+a#icon_text {
+  padding: 6%;
+  width: 100%;
+}
+
+div#icon_container#icon {
+  margin-top: 0;
+}
+
+#icon {
+  position: relative;
+  top: 20%;
+  padding: 20px;
+}
+
+#name{
+  font-family: 'NewTitle-Variable', Avenir Next Condensed, Arial Narrow, Impact, sans-serif; 
+  color:#333; 
+}
+
+#name_1{
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  font-weight:bold; 
+  font-size: 8cap; 
+  align-items: center;
+
+  position: relative;
+   top:20vh;
+
+}
+
+#name_2{
+  display: flex;
+  justify-content: center; /* Center horizontally */
+
+  font-weight: thin;
+   align-items: center; 
+   font-size: 5cap;
+
+   position: relative;
+   top:20vh;
+}
+
+#extra_text{
+  display: flex;
+  justify-content: center; /* Center horizontally */
+
+  font-weight: thin;
+   align-items: center; 
+   font-size: 2cap;
+
+   position: relative;
+   top:25vh;
+}
+
+#image{
+  display: flex;
+  justify-content: center; /* Center horizontally */
+
+  font-weight: thin;
+   align-items: center; 
+   font-size: 2cap;
+
+   position: relative;
+   top:20vh;
+}

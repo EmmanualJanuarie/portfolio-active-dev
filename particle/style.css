@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Helps with sizing */
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* Prevents scrolling */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: gray; /* Set the desired background color */
+}
+
+#particles-js {
+    background: gray;
+    height: 100%; /* Ensures the background covers the full height */
+    position: absolute; /* Allows it to be positioned behind the card */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; /* Lower z-index for particles */
+}

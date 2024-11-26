@@ -1,0 +1,53 @@
+.card-size {
+    /* Set a fixed size for the card or use min-height */
+    width: 300px; /* Adjust width as needed */
+    min-height: 20px; /* Set a minimum height */
+}
+
+/* Input buttin size */
+input{
+    width:60%;
+}
+
+.btn-blue{
+    background-color: black;
+    border-radius:5px 5px 5px 5px;
+    color:white;
+
+    /* chaning size of button */
+    width:30%;
+}
+
+.btn-blue:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+
+.outer-card{
+    border: 2px solid lightgray;
+    border-radius:5px 5px 5px 5px;
+    height:2%;
+}
+
+.frost-effect {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 50px auto;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-center-location {
+    position: relative; /* Establishes a positioning context for the card */
+    z-index: 2; /* Higher z-index to appear above particles */
+    width: 300px; /* Adjust width as needed */
+    min-height: 90px; /* Set a minimum height */
+
+    border-radius: 10px; /* Optional: Add some rounding */
+    padding: 20px; /* Optional: Add some padding */
+}
+
