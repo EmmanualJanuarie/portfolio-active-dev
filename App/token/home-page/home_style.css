@@ -110,3 +110,8 @@ div#icon_container#icon {
    position: relative;
    top:20vh;
 }
+
+.Impactfont{
+  font-family: 'NewTitle-Variable', Avenir Next Condensed, Arial Narrow, Impact, sans-serif; 
+  color:#333;
+}

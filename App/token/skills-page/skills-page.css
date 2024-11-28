@@ -1,0 +1,46 @@
+/* Styling Grid */
+
+h1{
+    margin:30px 0;
+}
+
+.grid-card{
+    padding:2em;
+    border:1px solid rgb(75,82,92);
+    border-radius:10px;
+    background-color: #333;
+    text-align: center;
+
+}
+.grid-container {
+     display: grid; 
+     grid-template-columns: 
+     repeat(auto-fit, minmax(300px, 1fr));
+     gap:15px; 
+     justify-content: center;
+     padding: 50px;
+     color:white;
+
+     font-family: 'NewTitle-Variable', Avenir Next Condensed, Arial Narrow, Impact, sans-serif; 
+} 
+
+img {
+    padding: 3px; 
+    border-radius: 5px;
+}
+
+.grid-card:hover {
+    border: 1px solid gray;
+    box-sizing: border-box;
+  
+    transform: scale(0.9);
+  
+    cursor: pointer;
+}
+
+  /* footer css */
+  #footer_skills{
+    position: relative;
+    top: 0vh;
+  }
+

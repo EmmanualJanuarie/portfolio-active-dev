@@ -1,0 +1,140 @@
+body{
+  overflow-x: hidden;
+}
+#heading {
+  font-family: 'NewTitle-Variable', Avenir Next Condensed, Arial Narrow, Impact, sans-serif; 
+  color: #333; 
+}
+
+#heading_text {
+  display: flex;
+  justify-content: center;
+  font-weight: bold; 
+  font-size: 12cap; 
+  align-items: center;
+  position: relative;
+  top: 2vh;
+}
+
+#heading_sub_text {
+  font-family: 'NewTitle-Variable', Avenir Next Condensed, Arial Narrow, Impact, sans-serif; 
+  color: #333; 
+}
+
+#sub_text {
+  display: flex;
+  justify-content: center;
+  font-size: 2cap; 
+  align-items: center;
+  position: relative;
+  top: 2vh;
+}
+
+/* Grid css */
+.work-container-firstrow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 0px; /* Add gap between items */
+  background-color: white;
+  padding: 0px;
+  position: relative;
+  top: 6vh;
+}
+
+.work-container-secondrow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 0px; /* Add gap between items */
+  background-color: white;
+  padding: 0px;
+  position: relative;
+  top: 33vh;
+}
+
+
+.container-size {
+  width: 100%; 
+  height:450%; 
+  overflow: hidden; 
+  border: 1px solid gray;
+
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.container-size:hover .fit-image {
+  border: 1px solid gray;
+  box-sizing: border-box;
+
+  transform: scale(0.9);
+
+  cursor: pointer;
+}
+
+.fit-image {
+  max-width: 100%; 
+  width:24%;
+  max-height: 400%; 
+  height:350%;
+
+  object-fit:fill;
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 1;
+}
+
+.image-caption {
+  font-family: 'NewTitle-Variable', Avenir Next Condensed, Arial Narrow, Impact, sans-serif; 
+  color: #333; 
+
+  font-weight: bold;
+  text-align: left;
+  position: relative;
+  top:85%;
+
+}
+
+/* footer css */
+#footer{
+  position: relative;
+  top: 81vh;
+}
+
+
+.modal {
+  display:none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+}
+
+/* modal  */
+.close, #info:hover{
+  cursor: pointer;
+}
+
+/*  */
+
+strong {
+  color: #007BFF; /* Bootstrap primary color */
+}
+
+#footer_text{
+    padding: 0%;
+    width: 20%;
+    margin:10%;
+}
