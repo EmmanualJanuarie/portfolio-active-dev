@@ -33,7 +33,7 @@
 
             if (!token || !expires) {
                 alert('Invalid session.');
-                window.location.href = 'http://127.0.0.1:5500/App/token/home-page/home-page.html';
+                window.location.href = 'http:www.erjweb.site/App/token/home-page/home-page.php';
                 return;
             }
 
@@ -44,7 +44,7 @@
             } else {
                 // Token is invalid or expired
                 alert('Session expired.');
-                window.location.href = 'http://127.0.0.1:5500/App/token/home-page/home-page.html';
+                window.location.href = 'http:www.erjweb.site/App/token/home-page/home-page.php';
             }
         }
 
@@ -57,12 +57,12 @@
 <body id="content" style="display:none;">
     <!-- Top Navigation Menu -->
     <div class="topnav">
-        <a href="../home-page/home-page.html" class="active">emmanual.dev</a>
+        <a href="../home-page/home-page.php" class="active">emmanual.dev</a>
         <div id="myLinks">
-          <a href="../work-page/work-page.html">Work</a>
-          <a href="../about-page/about-page.html">About</a>
-          <a href="../skills-page/skills-page.html">Skills</a>
-          <a href="../certificate-page/certificate-page.html">Cert.</a>
+          <a href="../work-page/work-page.php">Work</a>
+          <a href="../about-page/about-page.php">About</a>
+          <a href="../skills-page/skills-page.php">Skills</a>
+          <a href="../certificate-page/certificate-page.php">Cert.</a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
@@ -70,15 +70,15 @@
       </div>
    <!-- Creating navbar -->
    <ul id="home_nav">
-    <li><a href="../work-page/work-page.html">Work</a></li>
-    <li><a href="../about-page/about-page.html">About</a></li>
-    <li><a href="../home-page/home-page.html" id="icon_text">
+    <li><a href="../work-page/work-page.php">Work</a></li>
+    <li><a href="../about-page/about-page.php">About</a></li>
+    <li><a href="../home-page/home-page.php" id="icon_text">
         <div id="icon_container">
             <span id="icon">emmanual.dev</span>
         </div>
     </a></li>
-    <li><a href="../skills-page/skills-page.html">Skills</a></li>
-    <li><a href="../certificate-page/certificate-page.html">Cert.</a></li>
+    <li><a href="../skills-page/skills-page.php">Skills</a></li>
+    <li><a href="../certificate-page/certificate-page.php">Cert.</a></li>
   </ul>
 
 
