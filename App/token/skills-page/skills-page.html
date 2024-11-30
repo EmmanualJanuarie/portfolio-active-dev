@@ -13,10 +13,29 @@
     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" 
     referrerpolicy="no-referrer" />
 
+    
+    <!-- media query of skills page -->
+    <link rel="stylesheet" href="../media-queries/mq-skills-page.css">
+
 
     <title>Emmanual | Skills</title>
+    
 </head>
 <body>
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <a href="../home-page/home-page.html" class="active">emmanual.dev</a>
+        <div id="myLinks">
+          <a href="../work-page/work-page.html">Work</a>
+          <a href="../about-page/about-page.html">About</a>
+          <a href="../skills-page/skills-page.html">Skills</a>
+          <a href="../certificate-page/certificate-page.html">Cert.</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
     <ul id="header">
         <li><a href="../work-page/work-page.html">Work</a></li>
         <li><a href="../about-page/about-page.html">About</a></li>
@@ -125,5 +144,16 @@
         <li><a href="https://www.linkedin.com/in/emmanual-januarie-9ba580205/">LinkedIn</a></li>
         <li><a href="../video-page/video-page.html" target="_blank">Videos</a></li>
       </ul>
+
+      <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+            x.style.display = "none";
+            } else {
+            x.style.display = "block";
+            }
+        }
+        </script>
 </body>
 </html>

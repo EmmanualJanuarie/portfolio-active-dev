@@ -1,0 +1,88 @@
+/* Responsive styles for screens smaller than 461px */
+@media (max-width: 600px) {
+    ul {
+        justify-content: center; /* Center items when stacked */
+    }
+
+    li {
+        margin: 5px; /* Adjust margin for smaller screens */
+    }
+
+    a {
+        font-size: 0.9em; /* Adjust font size */
+        padding: 8px 10px; /* Adjust padding for smaller clickable area */
+    }
+
+    /* body content*/
+
+    #name_1 {
+        font-size: 2em; /* Smaller font size for tablets */
+    }
+
+    #name_2 {
+        font-size: 1.2em; /* Smaller font size for tablets */
+    }
+
+    #extra_text {
+        font-size: 0.9em; /* Smaller font size for tablets */
+    }
+
+    #image img {
+        max-width: 90%; /* Slightly larger GIF for smaller devices */
+    }
+}
+
+
+@media (max-width: 412px) {
+    ul {
+        justify-content: center; /* Center items when stacked */
+    }
+
+    li {
+        margin: 5px; /* Adjust margin for smaller screens */
+    }
+
+    a {
+        font-size: 0.6em; /* Adjust font size */
+        padding: 5px 5px; /* Adjust padding for smaller clickable area */
+    }
+
+    .topnav{
+        display: block;
+      }
+
+      #home_nav{
+        display: none;
+      }
+}
+
+/* NOTSUPPORTED DEVICES */
+@media (max-width: 300px) {
+    ul, #name{
+        display: none;
+    }
+
+    body {
+    background-image: url("../../../src/DEVICE-NOT-SUPPORTED.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 190px;
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0; /* Remove default margin */
+}
+
+.topnav{
+    display: none;
+  }
+
+    
+}
+
+/* Optional: Styles for larger screens */
+@media (min-width: 462px) and (max-width: 900px) {
+    a {
+        font-size: 1.1em; /* Slightly increase font size */
+    }
+}

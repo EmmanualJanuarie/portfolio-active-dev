@@ -1,5 +1,5 @@
 body{
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 .grid-container { 
     display: grid; 
@@ -54,9 +54,73 @@ body{
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust position to center */
     color: white; /* Text color of the label */
+    background-color: rgba(4, 99, 134, 0.7); /* Semi-transparent red background */
+    padding: 8px 12px; /* Padding for the label */
+    border-radius: 5px; /* Rounded corners for the label */
+    font-weight: bold; /* Bold text for emphasis */
+    z-index: 10; /* Ensure the label is above the image */
+}
+
+.email-to-view-label {
+    position: absolute; /* Position the label absolutely */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to center */
+    color: white; /* Text color of the label */
     background-color: rgba(255, 0, 0, 0.7); /* Semi-transparent red background */
     padding: 8px 12px; /* Padding for the label */
     border-radius: 5px; /* Rounded corners for the label */
     font-weight: bold; /* Bold text for emphasis */
     z-index: 10; /* Ensure the label is above the image */
 }
+
+
+/* hamburger styling */
+.mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #333;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: #333;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .active {
+    background-color: #333;
+    color: white;
+  }
+  
+  #myLinks a:hover{
+    text-decoration: underline;
+  }
+  
+  .topnav{
+    display: none;
+  }
+  

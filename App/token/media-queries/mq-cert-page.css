@@ -1,0 +1,94 @@
+/* Responsive styles for screens smaller than 600px */
+@media (max-width: 600px) {
+    ul {
+        justify-content: center; /* Center items when stacked */
+    }
+
+    li {
+        margin: 5px; /* Adjust margin for smaller screens */
+    }
+
+    a {
+        font-size: 0.9em; /* Adjust font size */
+        padding: 8px 10px; /* Adjust padding for smaller clickable area */
+    }
+
+    /* Body content */
+
+    #heading {
+        font-size: 0.7em; /* Smaller font size for tablets */
+    }
+
+    /* Adjust grid for smaller screens */
+    .work-container-firstrow,
+    .work-container-secondrow {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust columns for smaller screens */
+    }
+}
+
+/* Further adjustments for screens smaller than 412px */
+@media (max-width: 412px) {
+    ul {
+        justify-content: center; /* Center items when stacked */
+    }
+
+    li {
+        margin: 5px; /* Adjust margin for smaller screens */
+    }
+
+    a {
+        font-size: 0.6em; /* Adjust font size */
+        padding: 5px 5px; /* Adjust padding for smaller clickable area */
+    }
+
+    /* Adjust grid for very small screens */
+    .work-container-firstrow,
+    .work-container-secondrow {
+        grid-template-columns: repeat(2, 1fr); /* Two columns layout for very small screens */
+    }
+
+    #heading {
+        font-size: 0.5em; /* Smaller font size for tablets */
+    }
+
+    .topnav{
+        display: block;
+      }
+
+      #header{
+        display: none;
+      }
+}
+
+/* NOTSUPPORTED DEVICES */
+@media (max-width: 300px) {
+    ul, #heading, #heading_sub_text {
+        display: none; /* Hide elements for unsupported devices */
+    }
+
+    .work-container-firstrow, .work-container-secondrow {
+        display: none; /* Hide grid for unsupported devices */
+    }
+
+    body {
+        background-image: url("../../../src/DEVICE-NOT-SUPPORTED.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0px 190px;
+        display: flex; /* Enable Flexbox */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        margin: 0; /* Remove default margin */
+    }
+
+    .grid-container{
+        display: none;
+      }
+}
+
+/* Optional: Styles for larger screens */
+@media (min-width: 462px) and (max-width: 900px) {
+    a {
+        font-size: 1.1em; /* Slightly increase font size */
+    }
+}

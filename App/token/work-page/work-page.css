@@ -1,6 +1,89 @@
-body{
-  overflow-x: hidden;
+/* Styling Grid */
+
+h1{
+  margin:30px 0;
 }
+
+.grid-card{
+  padding:2em;
+  border:1px solid rgb(75,82,92);
+  border-radius:10px;
+  background-color: #333;
+  text-align: center;
+
+}
+.grid-container {
+   display: grid; 
+   grid-template-columns: 
+   repeat(auto-fit, minmax(400px, 1fr));
+   gap:15px; 
+   justify-content: center;
+   padding: 50px;
+   color:white;
+
+   font-family: 'NewTitle-Variable', Avenir Next Condensed, Arial Narrow, Impact, sans-serif; 
+} 
+
+img {
+  padding: 3px; 
+  border-radius: 5px;
+}
+
+.grid-card:hover {
+  border: 1px solid gray;
+  box-sizing: border-box;
+
+  transform: scale(0.9);
+
+  cursor: pointer;
+}
+
+/* modal styling */
+.modal {
+  display:none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+}
+
+/* modal  */
+.close, #info:hover{
+  cursor: pointer;
+}
+
+strong {
+  color: #007BFF; /* Bootstrap primary color */
+}
+
+/* footer css */
+#footer{
+  position: relative;
+  top: 21vh;
+}
+
+/* footer styling */
+#footer_text{
+  padding: 0%;
+  width: 20%;
+  margin:10%;
+}
+
+
+/* Heading styling */
 #heading {
   font-family: 'NewTitle-Variable', Avenir Next Condensed, Arial Narrow, Impact, sans-serif; 
   color: #333; 
@@ -30,111 +113,95 @@ body{
   top: 2vh;
 }
 
-/* Grid css */
-.work-container-firstrow {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-  gap: 0px; /* Add gap between items */
-  background-color: white;
-  padding: 0px;
-  position: relative;
-  top: 6vh;
-}
-
-.work-container-secondrow {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-  gap: 0px; /* Add gap between items */
-  background-color: white;
-  padding: 0px;
-  position: relative;
-  top: 33vh;
-}
-
-
-.container-size {
-  width: 100%; 
-  height:450%; 
-  overflow: hidden; 
-  border: 1px solid gray;
-
-  box-sizing: border-box;
-  padding: 10px;
-}
-
-.container-size:hover .fit-image {
-  border: 1px solid gray;
-  box-sizing: border-box;
-
-  transform: scale(0.9);
-
-  cursor: pointer;
-}
-
+/* Styling to fit image */
 .fit-image {
   max-width: 100%; 
-  width:24%;
-  max-height: 400%; 
+  width:64%;
+  max-height: 15vh; 
   height:350%;
 
   object-fit:fill;
-  transition: transform 0.3s ease;
-  position: absolute;
+  position: relative;
   top: 1;
 }
 
-.image-caption {
-  font-family: 'NewTitle-Variable', Avenir Next Condensed, Arial Narrow, Impact, sans-serif; 
-  color: #333; 
-
-  font-weight: bold;
-  text-align: left;
-  position: relative;
-  top:85%;
+/* custom image fit */
+.custom-fit-image {
+  max-height: 100%; 
+  height: 138px;
 
 }
 
-/* footer css */
-#footer{
-  position: relative;
-  top: 81vh;
+/* removing anchor effect */
+a{
+  text-decoration: none;
+  color: white;
 }
 
-
-.modal {
-  display:none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1000; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+/* hamburger styling */
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #333;
+  height: 500px;
+  color: white;
   border-radius: 10px;
 }
 
-/* modal  */
-.close, #info:hover{
-  cursor: pointer;
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
 }
 
-/*  */
-
-strong {
-  color: #007BFF; /* Bootstrap primary color */
+.topnav #myLinks {
+  display: none;
 }
 
-#footer_text{
-    padding: 0%;
-    width: 20%;
-    margin:10%;
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: #333;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.active {
+  background-color: #333;
+  color: white;
+}
+
+#myLinks a:hover{
+  text-decoration: underline;
+}
+
+.topnav{
+  display: none;
+}
+
+
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+  .grid-container {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Smaller columns for smaller screens */
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 400px) {
+  .grid-container {
+      grid-template-columns: 1fr; /* Single column layout for very small screens */
+  }
 }

@@ -38,6 +38,56 @@ img {
     cursor: pointer;
 }
 
+/* hamburger styling */
+.mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #333;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: #333;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .active {
+    background-color: #333;
+    color: white;
+  }
+  
+  #myLinks a:hover{
+    text-decoration: underline;
+  }
+  
+  .topnav{
+    display: none;
+  }
+
+  
   /* footer css */
   #footer_skills{
     position: relative;
