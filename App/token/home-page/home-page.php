@@ -33,7 +33,7 @@
 
             if (!token || !expires) {
                 alert('Invalid session.');
-                window.location.href = 'http:www.erjweb.site/App/token/home-page/home-page.php';
+                window.location.href = 'https:www.erjweb.site/App/token/home-page/home-page.php';
                 return;
             }
 
@@ -44,7 +44,7 @@
             } else {
                 // Token is invalid or expired
                 alert('Session expired.');
-                window.location.href = 'http:www.erjweb.site/App/token/home-page/home-page.php';
+                window.location.href = 'https:www.erjweb.site/App/token/home-page/home-page.php';
             }
         }
 
